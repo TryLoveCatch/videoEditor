@@ -1,0 +1,3 @@
+include ':app'
+include ':exoplayer_core'
+include ':exoplayer_ui'

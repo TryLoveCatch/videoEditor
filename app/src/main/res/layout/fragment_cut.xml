@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/buttons">
+
+        <com.estrongs.android.pop.video.edit.view.frames.VideoFramesView
+                android:id="@+id/frames"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+
+        <Button android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:id="@+id/preview"
+                android:text="预览"
+                android:layout_marginRight="30dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+        />
+
+        <Button android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:id="@+id/save"
+                android:text="保存"
+                android:layout_toRightOf="@+id/preview"
+                android:layout_centerVertical="true"
+        />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffffff">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/content_frame"
+            android:background="#ff0000"
+            android:layout_marginTop="?attr/actionBarSize"
+            app:controller_layout_id="@layout/video_player_controls"
+            app:player_layout_id="@layout/video_player_view"
+            app:hide_on_touch="false"
+            app:show_timeout="-1"
+            app:surface_type="texture_view"
+    />
+
+    <FrameLayout
+         android:id="@+id/content_frame"
+         android:layout_width="match_parent"
+         android:layout_height="180dip"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

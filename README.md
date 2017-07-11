@@ -4,7 +4,8 @@ MediaCodec实现视频编辑
 主要实现功能如下：
 
 1. EXOPlayer播放
-2. 剪切视频并且保存
+2. MediaCodec实现编解码视频
+3. 剪切视频并通过MediaMuxer保存
 3. 保存的时候，通过openGL添加一个背景
 4. 背景随着当前视频播放时时变化
 
